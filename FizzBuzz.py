@@ -1,16 +1,17 @@
 """
 Q1. Why is the report method untestable ? [2 pts]
 
-
+Ans: dependency on external collabrators. [file operation]
 
 
 Q2. How will you change the api of the report method to make it more testable ? [2 pts]
 
+Ans:   def report(self, numbers, FileHandlerMock)
 
 
 """
 class FizzBuzz(object):
-    def report(self, numbers):
+    def report(self, numbers, MyStub):
 
         report_file = open('c:/temp/fizzbuzz_report.txt', 'w')
 
